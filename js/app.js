@@ -1,19 +1,19 @@
-// //Configurar SW
-// let swLocation = "sw.js";
-// // "/beerjs/sw.js";
+//Configurar SW
+let swLocation = "sw.js";
+// "/beerjs/sw.js";
 
-// if (navigator.serviceWorker) {
-//     if (window.location.href.includes("localhost")) swLocation = "/sw.js"; //Varia según el host
-//     navigator.serviceWorker.register(swLocation);
-// }
+if (navigator.serviceWorker) {
+  if (window.location.href.includes("localhost")) swLocation = "/sw.js"; //Varia según el host
+  navigator.serviceWorker.register(swLocation);
+}
 
 // //Logic of web app
 // console.log("Hello world!!");
 
 // confirmado service worker
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/sw.js");
-}
+// if (navigator.serviceWorker) {
+//   navigator.serviceWorker.register("/sw.js");
+// }
 
 $(document).ready(function () {
   // Tu código jQuery aquí
